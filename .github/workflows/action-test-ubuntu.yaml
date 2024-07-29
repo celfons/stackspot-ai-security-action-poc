@@ -14,6 +14,7 @@ permissions: # mandatory to add comment on PR
 jobs:
   security:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - uses: GuillaumeFalourd/stackspot-ai-security-action-poc@main
         id: run
